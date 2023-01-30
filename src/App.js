@@ -38,8 +38,8 @@ function App() {
   ];
 
   const configuration = new Configuration({
-    apiKey: "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",
-  });
+    apiKey: "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",
+  }); console.log(configuration,'config')
   // const prompt = "What is the capital of France?";
   const handleSubmit = (prompt) => {
     console.log(prompt, "text");
@@ -53,6 +53,7 @@ function App() {
 
   async function getAiResponse(topic) {
     const openai = new OpenAIApi(configuration);
+    console.log(openai,'testopen')
     const completion = await openai.createCompletion({
       model: "text-davinci-003",
       prompt: topic,
