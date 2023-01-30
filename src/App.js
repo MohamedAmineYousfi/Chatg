@@ -36,9 +36,9 @@ function App() {
       end: true,
     },
   ];
-
+// console.log(process.env.REACT_APP_API_KEY,key)
   const configuration = new Configuration({
-    apiKey: "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",
+    apiKey: process.env.REACT_APP_API_KEY,
   }); console.log(configuration,'config')
   // const prompt = "What is the capital of France?";
   const handleSubmit = (prompt) => {
