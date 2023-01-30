@@ -96,7 +96,7 @@ function App() {
     <div className="App">
       <aside className="sidemenu">
         <div className="side-menu-button" onClick={refresh}>
-          <span >+</span>New Chat
+          <span >+ by YAM </span>New Chat
         </div>
       </aside>
 
